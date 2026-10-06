@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -14,5 +16,3 @@ jobs:
 
       - name: Saludar
         run: echo "Hola desde GitHub Actions"
-
-
